@@ -1,0 +1,227 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fffafd;
+    color: #17151a;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+header {
+    background-color: #eadff5;
+    padding: 34px 18px;
+    text-align: center;
+    border-bottom: 5px solid #c9dafa;
+}
+
+h1 {
+    margin: 0;
+    color: #59456d;
+    font-size: 36px;
+}
+
+h2 {
+    color: #665078;
+    font-size: 28px;
+    text-align: center;
+    margin-top: 0;
+}
+
+h3 {
+    color: #5b6f9b;
+    font-size: 20px;
+}
+
+p {
+    margin-top: 8px;
+    margin-bottom: 12px;
+}
+
+.tagline {
+    color: #17151a;
+    font-size: 18px;
+}
+
+nav {
+    margin-top: 18px;
+}
+
+nav a {
+    display: inline-block;
+    margin: 5px 8px;
+    padding: 7px 12px;
+    background-color: #fffafd;
+    border: 1px solid #d6c3e8;
+    border-radius: 18px;
+    color: #59456d;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #dce8ff;
+}
+
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 25px auto;
+}
+
+section {
+    margin-bottom: 30px;
+    padding: 26px;
+    background-color: #ffffff;
+    border: 1px solid #eadff5;
+    border-radius: 14px;
+}
+
+.profile-section {
+    text-align: center;
+    background-color: #fff2f8;
+}
+
+.profile-photo {
+    display: block;
+    width: 190px;
+    height: 190px;
+    margin: 0 auto 15px;
+    border: 5px solid #d8c7ec;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.subtitle {
+    color: #6c7fa8;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.info-card,
+.skills-box,
+.contact-card {
+    margin: 14px 0;
+    padding: 16px;
+    border: 1px solid #d9dff3;
+    background-color: #f8f7ff;
+    border-radius: 10px;
+}
+
+.section-intro {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Grid keeps all eight experience cards in consistent pairs. */
+.experience-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.experience-card {
+    min-width: 0;
+    margin: 0;
+    padding: 16px;
+    border: 1px solid #e0d3ef;
+    background-color: #fff8fc;
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+
+.experience-card img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border: 1px solid #d8c7ec;
+    border-radius: 8px;
+    background-color: #eadff5;
+    box-sizing: border-box;
+}
+
+.experience-card h3 {
+    margin-bottom: 5px;
+}
+
+.skills-box {
+    width: 43%;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 2%;
+}
+
+a {
+    color: #536da5;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #cfc2df;
+    border-radius: 6px;
+    background-color: #fffafd;
+    color: #17151a;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px 22px;
+    border: 1px solid #b9c9ed;
+    border-radius: 7px;
+    background-color: #dce8ff;
+    color: #3f4f77;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #eadff5;
+}
+
+footer {
+    padding: 18px;
+    background-color: #eadff5;
+    color: #59456d;
+    text-align: center;
+}
+
+@media screen and (max-width: 650px) {
+    main {
+        width: 94%;
+    }
+
+    section {
+        padding: 16px;
+    }
+
+    .experience-list {
+        grid-template-columns: 1fr;
+    }
+
+    .skills-box {
+        width: 100%;
+        margin-right: 0;
+        box-sizing: border-box;
+    }
+
+    nav a {
+        margin: 4px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+}
